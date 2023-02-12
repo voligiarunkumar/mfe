@@ -1,5 +1,6 @@
 const {merge}=require('webpack-merge');
 const ModuleFederationPlugin=require('webpack/lib/container/ModuleFederationPlugin');
+//making sure that we have to use only webpack config  not webpack serve in the webpack.prod.js
 const pacakgejson=require('../package.json');
 const commonConfig=require('./webpack.common');
 const devConfig={
