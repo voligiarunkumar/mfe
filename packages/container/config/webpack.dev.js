@@ -19,9 +19,7 @@ const devConfig={
             },
             shared:pacakgejson.dependencies,
         }),
-        new HtmlWebpackPlugin({
-            template:'./public/index.html'
-        })
+       
     ]
 };
 module.exports=merge(commonConfig,devConfig);
