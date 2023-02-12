@@ -13,7 +13,7 @@ const prodConfig = {
     new ModuleFederationPlugin({
         name:'container',
         remotes:{
-            marketing:`marketing@${domain}/marketing/remoteEntry.js`
+            marketing:`marketing@${domain}/marketing/latest/remoteEntry.js`//to get domain name we are adding domain name sceretes in github for container from there we are routing to this marketing
         },
         shared:packageJson.dependencies,
     }),
