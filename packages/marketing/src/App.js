@@ -7,11 +7,11 @@ const generateClassName=createGenerateClassName(
   {
     productionPrefix:'ma',
   }
-)
+);
 export default () => {
   return (
     <div>
-      <StylesProvider createGenerateClassName={generateClassName} >
+      <StylesProvider generateClassName={generateClassName}>
         <BrowserRouter>
           <Switch>
             <Route exact path="/pricing" component={Pricing} />
