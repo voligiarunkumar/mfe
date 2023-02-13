@@ -5,7 +5,7 @@ import { StylesProvider,createGenerateClassName } from "@material-ui/core/styles
 import { BrowserRouter } from "react-router-dom";
 const generateClassName=createGenerateClassName(
   {
-    productionPrefix:'ca'
+    productionPrefix:'ca',
   }
 )
 export default () => {
