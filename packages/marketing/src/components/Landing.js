@@ -25,7 +25,7 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
-  '@global': {
+  '@global': {        
     a: {
       textDecoration: 'none',
     },

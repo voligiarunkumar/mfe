@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\packages",
+    "\\packages\\auth",
+    "\\packages\\auth\\config",
+    "\\packages\\auth\\src"
+  ],
+  "SelectedNode": "\\packages\\auth\\src\\bootstrap.js",
+  "PreviewInSolutionExplorer": false
+}

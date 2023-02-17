@@ -6,20 +6,23 @@ const commonConfig = require("./webpack.common");
 const devConfig = {
   mode: "development",
   output:{
-    publicPath:'http://localhost:8081/'
+    publicPath:'http://localhost:8083/'
   },
   devServer: {
-    port: 8081,
+    port: 8083,
     historyApiFallback: {
       index: "/index.html",
     },
+    headers:{
+      'Access-Control-Allow-Origin':'*'
+    }
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "marketing",
-      filename: "remoteEntry.js",
+      name: "dashboard",
+      filename:"remoteEntry.js",
       exposes: {
-        "./MarketingApp": "./src/bootstrap",
+        "./DashboardApp":"./src/bootstrap",
       },
       shared:pacakgejson.dependencies,//removes duplicate loading of dependencies
     }),
